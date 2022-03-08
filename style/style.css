@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Roboto:wght@400;700&family=Work+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Lato:wght@400;700&family=Roboto:wght@400;700&family=Work+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Lato:wght@400;700&family=Lobster&family=Roboto:wght@400;700&family=Work+Sans:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Berthold Akzidenz Grotesk BE';
+    src: url('../fonts/AkzidenzGroteskBE-Light.eot');
+    src: url('../fonts/AkzidenzGroteskBE-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/AkzidenzGroteskBE-Light.woff2') format('woff2'),
+        url('../fonts/AkzidenzGroteskBE-Light.woff') format('woff'),
+        url('../fonts/AkzidenzGroteskBE-Light.ttf') format('truetype'),
+        url('../fonts/AkzidenzGroteskBE-Light.svg#AkzidenzGroteskBE-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    box-shadow: 0 4px 20px rgb(0 0 0 / 8%);
+    background-color: rgb(255, 255, 255, 0.9);
+}
+
+.menu-wraper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-container-image {
+    padding-left: 0;
+    list-style: none;
+}
+
+.menu-container-items {
+    display: flex;
+    list-style: none;
+    font-family: 'Berthold Akzidenz Grotesk BE', sans-serif;
+    font-size: 18px;
+}
+
+.menu-services {
+    padding: 16px;
+}
+
+.menu-services-link {
+    text-decoration: none;
+    color: #4A4A4A;
+    position: relative;
+}
+
+.menu-services-link::after {
+    position: absolute;
+    bottom: -4px;
+    content: "";
+    background-color: transparent;
+    display: block;
+    height: 2px;
+    width: 1px;
+    margin-top: 2px;
+    transition: all .3s linear;
+}
+
+.menu-services-link:hover::after {
+    background-color: #4800FF;
+    width: 100%;
+}
+
+.menu-services-link:hover {
+    color: #4800FF;
+    transition: var(--trans,color .4s ease 0s);
+}
+
+.quienes-son {
+    background-image: url(../images/entorno-trabajo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.quienes-son__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 30px;
+    height: 522px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.quienes-son-txt {
+    font-family: 'Berthold Akzidenz Grotesk BE', sans-serif;
+    color: #ffffff;
+    background-color: #803bebbd;
+    display: inline;
+    font-size: 28px;
+    line-height: 56px;
+    padding: 6px;
+}
+
+.titles-secundaries {
+    font-family: 'Berthold Akzidenz Grotesk BE', sans-serif;
+    color: #1A1A1A;
+    font-weight: 700;
+    font-size: 34px;
+    padding: 78px auto;
+    text-align: center;
+    margin: 0 0 80px;
+}
+
+.container-services {
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(2, minmax(150px, 4fr));
+    place-content: center;
+    margin-bottom: 150px;
+    line-height: 36px;
+}
+
+.services {
+    padding-top: 60px;
+}
+
+.services__item {
+    padding: 0 72px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    color: #4A4A4A;
+    position: relative;
+    justify-content: flex-end;
+}
+
+.services__item--two {
+    flex-direction: row;
+    margin-top: 70px;
+}
+
+.services__item--animation .services__item-content{
+    transform: translateX(120%);
+    opacity: 1;
+}
+
+.services__item--two .services__item-content {
+    opacity: 1;
+    left: 0;
+}
+
+.services__item-content {
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-left: 72px;
+    opacity: 0;
+    transition: all .3s linear;
+    position: absolute;
+}
+
+ .services__container-img {
+    border-radius: 300px;
+    overflow: hidden;
+    flex: 0 1 50%;
+    margin: 0 40px;
+    z-index: 2;
+ }
+
+.services__item-img {
+    max-width: 100%;
+    display: block;
+}
+
+.subtitle-services {
+    font-size: 30px;
+    font-family: 'Berthold Akzidenz Grotesk BE', sans-serif;
+    margin: 0 0 40px ;
+}
+
+.services-txt {
+    font-size: 26px;
+    font-family: 'Berthold Akzidenz Grotesk BE', sans-serif;
+    margin: 0;
+}
+
+.services-icons {
+    padding-top: 34px;
+}
+
+.services-icons:hover {
+    transform: translateX(30px);
+    transform: scale(1.2);
+}
+
+.contacto {
+    background-color: #f0e5ff;
+}
+
+.titles-secundaries__titles-secundaries2 {
+    margin: 60px auto;
+}
+
+.titles-secundaries_vertical {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin: 0;
+    color: #ffffff;
+    font-size: 50px;
+}
+
+.footer-general {
+    background-color: #1A1A1A;
+    padding: 50px 0;
+}
+
+.footer-grid {
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Berthold Akzidenz Grotesk BE', sans-serif;
+}
+
+.footer-grid__item {
+    flex: 1;
+    text-align: center;
+}
+
+.footer-services {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+}
+
+.footer-subtitles {
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.footer-items {
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.item-arrow {
+    padding-right: 6px;
+    height: 18px;
+    width: auto;
+}
+
+.ft-item-link {
+    text-decoration: none;
+    color: #ffffff;
+    transition: var(--trans,color .4s ease 0s);
+}
+
+.ft-item-link:hover {
+    color: #8d5ad8bd;
+
+}
+.footer-container-item {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-cotainer-img {
+    padding: 0;
+    align-self: center;
+    margin: 0;
+    text-align: center;
+    flex: 1;
+}
+
+.footer-items {
+    display: flex;
+}
+
+.copyright {
+    background-color: #731FDE;
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.copyright-text {
+    font-size: 12px;
+    font-family: 'Berthold Akzidenz Grotesk BE', sans-serif;
+    color: #ffffff;
+    margin: 0 auto;
+}
+
+.contacto {
+    font-size: 26px;
+    font-family: 'Berthold Akzidenz Grotesk BE', sans-serif;
+    margin: 0;
+}
+
+.container-de-prueba {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.container-big {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    background-color: #731FDE;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    justify-items: center;
+}
+
+.container-small {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    grid-row: 1/3;
+    justify-content: center;
+}
+
+.txt-contact {
+    padding: 10px 60px;
+}
+
+.container-small_1 {
+    grid-row: 2/3;
+    line-height: 1.3;
+}
+
+.img-future {
+    width: 500px;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
